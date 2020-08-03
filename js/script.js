@@ -26,10 +26,14 @@ function diff_to_GMT(dt)
    return (Math.abs(dt.getTimezoneOffset() / 60));
 }
 
-dt = new Date(); 
+dt = new Date();
+
+if (angka == null || angka == 0) {
+    angka = diff_to_GMT(dt);
+}
 
 let diferrence = diff_to_GMT(dt) - angka;
-console.log(diferrence);
+
 const deg = 6;
 const hr = document.querySelector('#hr');
 const mn = document.querySelector('#mn');
@@ -45,8 +49,8 @@ setInterval(() => {
     }
     
 
-    let fixClock = (day.getHours() > 12 ? day.getHours() - 12 : day.getHours());
-    let hh = (fixClock - diferrence) * 30;
+    let fixClock = (day.getHours() > 12 ? day.getHours() - 12 : day.getHours()) - diferrence;
+    let hh = (fixClock) * 30;
     let mm = day.getMinutes() * deg;
     let ss = day.getSeconds() * deg;
     let ms = day.getMilliseconds() * deg;
