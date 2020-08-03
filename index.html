@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>World Clock</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+</head>
+<body>
+
+    <div class="container">
+        <div class="country">
+            <input type="text" id="name" value="COUNTRY">
+            <br>
+            <input class="desc" id="desc" value="GMT">
+        </div>
+        <div class="localClock">
+            <div class="clock">
+                <div class="hour">
+                    <div class="hr" id="hr"></div>
+                </div>
+                <div class="minute">
+                    <div class="mn" id="mn"></div>
+                </div>
+                <div class="second">
+                    <div class="sec" id="sec"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="clock_title">
+        <p>WORLD CLOCK</p>        
+    </div>
+
+    <div class="place">
+        <div class="row_op">
+            <div class="col_op">
+                <a href="?GMT=7&Name=Indonesia">
+                    <img id ="ina" src="asset/indonesia.png" alt="">
+                </a>
+                <a href="?GMT=8&Name=Singapore">
+                    <img id ="sgp" src="asset/singapore.jpg" alt="">
+                </a>
+                <a href="?GMT=7&Name=Laos">
+                    <img id ="lao" src="asset/laos.jpg" alt="">
+                </a>   
+            </div>
+            <div class="col_op">
+                <a href="?GMT=8&Name=China">
+                    <img id ="chn" src="asset/china.png" alt="">
+                </a>
+                <a href="?GMT=7&Name=Thailand">
+                    <img id ="thl" src="asset/thailand.jpg" alt="">
+                </a>
+                <a href="?GMT=8&Name=Malaysia">
+                    <img id ="mly" src="asset/malaysia.png" alt="">
+                </a>
+            </div>
+            <div class="col_op">
+                <a href="?GMT=9&Name=Japan">
+                    <img id ="jpn" src="asset/japan.png" alt="">
+                </a>
+                <a href="?GMT=9&Name=Korea">
+                    <img id ="kra" src="asset/korea.png" alt="">
+                </a>
+                <a href="?GMT=10&Name=Australia">
+                    <img id ="aus" src="asset/australia.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src='js/script.js'></script>
+</html>
